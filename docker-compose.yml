@@ -1,0 +1,10 @@
+version: '2'
+services:
+  simple-api:
+    image: go-simple-api
+    container_name: go-simple-api
+    ports:
+      - "8888:8888"
+    build:
+      context: ./
+      dockerfile: ./build/Dockerfile
